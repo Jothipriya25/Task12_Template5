@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>template 5</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            margin: 0;
+        }
+        .inside{
+            margin: auto; 
+            width:80%;
+        }
+        img{
+            width:100%;
+        }
+        .row1{
+            background-color: white;
+            padding:20px;
+        }
+        .row1 .inside > div:nth-child(1){
+            float:left;
+            width:25%;
+        }
+        .row1 .inside > div:nth-child(2){
+            float:right;
+            width:75%;
+        }
+        .row1 .inside > div:nth-last-child(2){
+            text-align: right;
+        }
+        .nav{
+            padding:10px 0px;
+        }
+        .nav a{
+            display: inline-block;
+            padding:30px 20px;
+            background-color:white;
+            color:black;
+            text-decoration:none;
+        }
+        .nav a:hover{
+            background-color: #e85356;
+            border-radius: 50%;
+        }
+        .clearfix{
+            clear:both;
+        }
+
+        /* row2 */
+
+        .row2{
+            background-image: url('https://textures.world/wp-content/uploads/2018/10/Seamless-Black-Wood-Texture-1-copy-600x399.jpg'); 
+            padding:30px;
+        }
+
+        .cover1{
+            width:100%;
+        }
+
+        .cover1 > div:nth-child(1){
+            width:20%; 
+            float:left; 
+            padding:10px;
+        }
+
+        .cover1  div > div:nth-child(1){
+            float:left; 
+            width:10%;
+            color:#dc4f52;
+        }
+
+        .cover1  div > div:nth-last-child(1){
+            float:right; 
+            width:85%; 
+            color:white;
+        }
+        .cover1 > div:nth-child(2){
+            width:2%; 
+            color:gray;  
+            float:left; 
+        }
+        .cover1 > div:nth-child(2)  h1{
+            font-size: xx-large; 
+            font-weight: 100;
+        }
+        .cover1 > div:nth-last-child(1) {
+            width:77%;  
+            float:right; 
+            padding-top: 10px;
+        }
+        .cover1 > div:nth-last-child(1) p {
+            color:gray; 
+            font-size:small;
+        }
+
+        /* row3 */
+
+        .row3{
+            padding:20px; 
+            background-color: black; 
+            color:white;
+        }
+
+        .cover2{
+            width:100%;
+        }
+        #col1{
+            width:25%;  
+            float:left; 
+            padding:5px;
+        }
+        #head3{
+            margin-bottom:0;
+        }
+        #heads3{
+            font-size:small; 
+            color:#696969;
+        }
+        .row3  button{
+            background-color: #e85356; 
+            border:#e85356; 
+            padding:7px; 
+            color:white; 
+            width:100px; 
+        }
+
+        
+        /* row4 */
+
+        .row4{
+            color:white; 
+            background-image: url('https://textures.world/wp-content/uploads/2018/10/Seamless-Black-Wood-Texture-1-copy-600x399.jpg');
+            padding-bottom: 40px;
+        }
+        .cover3{
+            width:100%;
+        }
+        #classA{
+            width:49%; 
+            float:left;
+        }
+        #classA > div:nth-child(1){
+            padding-top:30px;
+        }
+        #classA > div:nth-child(2){
+            width:50%; 
+            float:left; 
+            padding-right:10px;
+        }
+        #classA > div:nth-child(3){
+            width:50%; 
+            float:left; 
+            padding-left:10px;
+            padding-right:20px;
+            font-size: 14px;
+        }    
+        #classA div> h4{
+            margin: 0;
+        }
+        #classA > div:nth-child(3) > p{
+            color:#696969;
+        }
+        #classA div>div p{
+            margin-top:0;
+        }
+        #classA div>div{
+            float:left; 
+            color:#e85356;
+            padding-top: 10px;
+        }
+        #classA div>div ~ div{
+            float:right; 
+            color:#e85356;
+        }
+
+        .classB{
+            width:50%; 
+            float:right;
+        }
+
+        .classB> div:nth-child(1){
+            padding-top:30px; 
+        }
+        .cover4{
+            width:100%;
+        }
+        .left4{
+            width:25%;
+            float:left; 
+            padding:5px;
+        }
+        .right4{
+            width:25%; 
+            float:right;
+            padding:5px;
+        }
+        .cover4 > img{
+            height:200px;
+        }
+
+         
+        /* row5 */
+
+        .row5{
+            padding:20px; 
+            background-color: white; 
+            color:gray
+        }
+        .cover5{
+            width:100%;
+        }
+        .cover5 > div:nth-child(1){
+            float:left; 
+            width:50%; 
+            color:black;
+        }
+        .cover5 > div:nth-last-child(1){
+            float:right; 
+            width:50%; 
+        }
+        .cover5 > div:nth-last-child(1) > p{
+            float:right;
+        }
+
+    </style>
+    <body>
+        <header class="row1">
+            <div class="inside">
+                <div>
+                    <img src="kataklimtlogo.png">
+                </div>
+                <div>
+                    <nav class="nav">
+                        <a href=""> About</a>
+                        <a href=""> Services</a>
+                        <a href=""> Folio</a>
+                        <a href=""> Blog</a>
+                        <a href=""> Contact</a>
+                    </nav>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </header>
+        <header class="row2">
+            <div class="inside">
+                <img src="kataklimtbg.png">
+                <div class="cover1">
+                    <div>
+                        <div>
+                            <h1>W</h1>
+                        </div>
+                        <div>
+                            <h1>elcome!</h1>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h1>|</h1>
+                        
+                    </div>
+                    
+                    <div>
+                        <p><span style="color:#dc4f52"><b>Click here</b></span> for more info about this free website template created by TemplateMonster.com. This is a bootstrap template that goes with several layout options (for desktop, tablet, smartphone landscape and potriat) to fit all popular screen resolutions. The PSD source files of this template are available for free for the registered members of TemplateMonster.com. Feel free to get them!</p> 
+                    </div>
+                </div>
+            <div>
+            <div class="clearfix"></div>
+        </header>
+        <header class="row3">
+            <div class="inside">
+                <div class="cover2">
+                    <div id="col1">
+                        <div>
+                            <h4>Fashion</h4>
+                        </div>
+                        <div>
+                            <img src="fashion2.png">
+                        </div>
+                        <div>
+                            <p id="head3">At vero eos et accusamus et iusto</p>
+                            <p  id="heads3">Odio dignissimos ducimus qui blantitiis praesentium voluptatum.</p>
+                        </div>
+                        <br><br>
+                        <div>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div id="col1">
+                        <div class="head">
+                            <h4>Nature</h4>
+                        </div>
+                        <div>
+                            <img src="nature1.png">
+                        </div>
+                        <div>
+                            <p id="head3">Deleniti atque corrupti quos</p>
+                            <p id="heads3">Dolores et quas  excepturi sint occaecati cupiditate non provident.</p>
+                        </div>
+                        <br><br>
+                        <div>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div id="col1">
+                        <div class="head">
+                            <h4>Love story</h4>
+                        </div>
+                        <div>
+                            <img src="lovestory.png">
+                        </div>
+                        <div>
+                            <p id="head3">Similiuqe sunt in culpa qui officia</p>
+                            <p id="heads3">Deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                        </div>
+                        <br><br>
+                        <div>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                    <div id="col1" style="float:right;">
+                        <div class="head">
+                            <h4>Fine art</h4>
+                        </div>
+                        <div>
+                            <img src="fineart2.png">
+                        </div>
+                        <div>
+                            <p id="head3">Similiuqe sunt in culpa qui officia</p>
+                            <p id="heads3">Deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                        </div>
+                        <br><br>
+                        <div>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+        <header class="row4">
+            <div class="inside">
+                <div class="cover3">
+                    <div id="classA">
+                        <div>
+                            <h3>Shortly about me</h3>
+                        </div>
+                        <div>
+                            <img src="about.png">
+                        </div>
+                        <div>
+                            <h4>Sed ut perspictis unde omnis natus error volupatem accusantium doloue laudantium, totam rem.</h4>
+                            <p>Aperium, eaque ipsa quae ab illo veritatis et beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed </p>
+                            <hr color="#2b2b2b">
+
+                            <div>
+                                <p>&#9829; Campaigns</p>
+                                <p>&#9829; Potriats</p>
+                                <p>&#9829; Fashion</p>
+                                <p>&#9829; Fine art</p>
+                            </div>
+                        
+                            <div>
+                                <p>&#9829; Advertising</p>
+                                <p>&#9829; Lifestyle</p>
+                                <p>&#9829; Love story</p>
+                                <p>&#9829; Landscapes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="classB">
+                        <div>
+                            <h3>Latest photoshoots</h3>
+                        </div>
+                        
+                        <div class="cover4">
+                            <div class="left4">
+                                <img src="r1c1.png">
+                            </div>
+                            <div class="left4">
+                                <img src="r1c2.png">
+                            </div>
+                            <div class="right4">
+                                <img src="r1c3.png">
+                            </div>
+                            <div class="right4">
+                                <img src="r1c4.png">
+                            </div>
+
+                            <br><br>
+
+                            <div class="left4">
+                                <img src="r2c1.png">
+                            </div>
+                            <div class="left4">
+                                <img src="r2c2.png">
+                            </div>
+                            <div class="right4">
+                                <img src="r2c3.png">
+                            </div>
+                            <div class="right4">
+                                <img src="r2c44.png">
+                            </div>
+
+                            
+
+                            <div class="left4">
+                                <img src="r3c1.png">
+                            </div>
+                            <div class="left4">
+                                <img src="r3c2.png">
+                            </div>
+                            <div class="right4">
+                                <img src="r3c3.png">
+                            </div>
+                            <div class="right4">
+                                <img src="r3c4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </header>
+        <header class="row5">
+            <div class="inside">
+                <div class="cover5">
+                    <div>
+                        <h4><span>&#169;</span> Copyright.</h4>
+                    </div>
+                    <div>
+                        <p>
+                            <i style="color:#e85356;" class="fa-brands fa-facebook fa-2x"></i>&nbsp;&nbsp;&nbsp;
+                            <i style="color:#e85356;" class="fa-brands fa-flickr fa-2x"></i>&nbsp;&nbsp;&nbsp;
+                            <i style="color:#e85356;" class="fa-brands fa-twitter fa-2x"></i>&nbsp;&nbsp;&nbsp;
+                            <i style="color:#e85356;" class="fa-brands fa-google-plus fa-2x"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </header>
+    </body>
+</html>
